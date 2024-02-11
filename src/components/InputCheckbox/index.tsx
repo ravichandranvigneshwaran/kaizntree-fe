@@ -12,15 +12,16 @@ export const InputCheckbox: InputCheckboxComponent = ({ id, checked = false, dis
           "KaizntreeInputCheckbox--label-checked": checked,
           "KaizntreeInputCheckbox--label-disabled": disabled,
         })}
+        onClick={() => onChange(!checked)}
       />
-      <input
+      {/* <input
         id={inputId}
         type="checkbox"
         className="KaizntreeInputCheckbox--input"
         checked={checked}
         disabled={disabled}
         onChange={() => onChange(!checked)}
-      />
+      /> */}
     </div>
   )
 }
